@@ -13,6 +13,11 @@ public class test5 {
                 Arrays.asList(6, 7, 8, 9)
         );
 
+List<Integer> flattened = nestedLists.stream()
+        .flatMap(list -> list.stream())
+        .toList();
+
+System.out.println("Flattened list :" + flattened);
 
 
 
